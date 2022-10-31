@@ -4,7 +4,7 @@ export default function Login() {
     return (
         <>
             <div className="container">
-                Welcome back!
+                <strong>Welcome back!</strong>
 
 
                 <button className="login button">Log In</button>

@@ -1,8 +1,12 @@
 import React from 'react'
+import {Helmet} from 'react-helmet';
 
 export default function Home() {
     return (
         <>
+            <Helmet>
+                <style>{'body { background: black; }'}</style>
+            </Helmet>
             <div className="home-container">
                 <div className="logo">
                     <img src="" alt="Tech Notes Logo"/>
