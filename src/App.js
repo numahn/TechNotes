@@ -4,7 +4,8 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Notes from './components/Notes';
-import "./App.css"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 export default function App() {
   return (
    <Routes>
