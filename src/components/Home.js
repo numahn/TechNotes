@@ -1,15 +1,17 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
+import logo from "./PostIts.jpg";
 
 export default function Home() {
     return (
         <>
-            <Helmet>
+            {/* <Helmet>
                 <style>{'body { background: white; }'}</style>
-            </Helmet>
+            </Helmet> */}
             <div className="home-container">
-                <div className="logo">
-                    <img src="/PostIts.jpg" alt="..." />
+
+                <div className="logo-container">
+                    <img className='logo' src= {logo} alt="..." />
                 </div>
                 <div className="name">
                     <p>TechNotes</p>
@@ -33,15 +35,15 @@ export default function Home() {
                                     <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />
                                 </div>
                                 <div>
-                                    <a href="Signup.js">Log In</a>
-                                    <p>Don't have an account? <a href="Signup.js">Sign Up</a></p>
+                                    <a href="Login">Log In</a>
+                                    <p>Don't have an account? <a href="/Signup">Sign Up</a></p>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-dark text-muted text-center py-3 mt-3 fixed-bottom">
+            <div class="bg-dark text-muted text-center py-3 mt-3">
                 © 2022 TechNotes, Inc. All rights reserved.
             </div>
 
