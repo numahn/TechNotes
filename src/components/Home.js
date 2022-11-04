@@ -9,7 +9,7 @@ export default function Home() {
             </Helmet>
             <div className="home-container">
                 <div className="logo">
-                    <img src="/src/components/Images/Notes.jpg" alt="..." />
+                    <img src="/PostIts.jpg" alt="..." />
                 </div>
                 <div className="name">
                     <p>TechNotes</p>
