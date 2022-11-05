@@ -8,13 +8,15 @@ export default function Signup() {
             <div className="Sign-Up-Container">
                 <form class="row g-3">
                     <div className="Sign-Up-Form">
-                        <div class="col-md-4">
-                            <label for="validationDefault01" class="form-label">First name</label>
-                            <input type="text" class="form-control" placeholder="John" id="validationDefault01" required />
-                        </div>
-                        <div class="col-md-4">
-                            <label for="validationDefault02" class="form-label">Last name</label>
-                            <input type="text" class="form-control" placeholder="Doe" id="validationDefault02" required />
+                        <div className="name-form">
+                            <div class="col-md-4">
+                                <label for="validationDefault01" class="form-label">First name</label>
+                                <input type="text" class="form-control" placeholder="John" id="validationDefault01" required />
+                            </div>
+                            <div class="col-md-4">
+                                <label for="validationDefault02" class="form-label">Last name</label>
+                                <input type="text" class="form-control" placeholder="Doe" id="validationDefault02" required />
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <label for="validationDefaultUsername" class="form-label">Username</label>
