@@ -21,7 +21,7 @@ export default function Signup() {
                         <div className="col-md-3">
                             <label for="validationDefault05" className="form-label">Date of Birth</label>
                             <div className='Date-of-Birth'>
-                                <select className="form-select" id="validationDefault05" required >
+                                <select className="form-select dob-item month-select" id="validationDefault05" required >
                                     <option selected>Month</option>
                                     <option value="1">January</option>
                                     <option value="2">February</option>
@@ -36,8 +36,8 @@ export default function Signup() {
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                <input type="text" className="form-control" placeholder='Date' required />
-                                <input type="text" className="form-control" placeholder='Year' required />
+                                <input type="text" className="form-control input-md dob-item" placeholder='Date' required />
+                                <input type="text" className="form-control dob-item" placeholder='Year' required />
                             </div>
                         </div>
                         <div className="col-md-4">
