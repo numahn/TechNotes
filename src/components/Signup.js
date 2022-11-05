@@ -36,7 +36,7 @@ export default function Signup() {
                                     <option value="11">November</option>
                                     <option value="12">December</option>
                                 </select>
-                                <input type="text" className="form-control input-md dob-item" placeholder='Date' required />
+                                <input type="text" className="form-control dob-item" placeholder='Date' required />
                                 <input type="text" className="form-control dob-item" placeholder='Year' required />
                             </div>
                         </div>
