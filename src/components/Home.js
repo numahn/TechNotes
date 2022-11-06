@@ -22,17 +22,17 @@ export default function Home() {
                 </div>
             </div>
             <div className="log-container">
-                <div class="d-flex justify-content-center">
-                    <div class="p-2 bd-highlight">
-                        <div class="container-fluid">
-                            <form class="row g-3    ">
+                <div className="d-flex justify-content-center">
+                    <div className="p-2 bd-highlight">
+                        <div className="container-fluid">
+                            <form className="row g-3    ">
                                 <div>
-                                    <label for="inputEmail2" class="visually-hidden">Email</label>
-                                    <input type="text" readonly class="form-control" id="inputEmail2" placeholder="email@example.com" />
+                                    <label for="inputEmail2" className="visually-hidden">Email</label>
+                                    <input type="text" readonly className="form-control" id="inputEmail2" placeholder="email@example.com" />
                                 </div>
                                 <div>
-                                    <label for="inputPassword2" class="visually-hidden">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword2" placeholder="Password" />
+                                    <label for="inputPassword2" className="visually-hidden">Password</label>
+                                    <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
                                 </div>
                                 <div>
                                     <a href="Login">Log In</a>
@@ -43,7 +43,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div class="bg-dark text-muted text-center py-3 mt-3">
+            <div className="bg-dark text-muted text-center py-3 mt-3">
                 © 2022 TechNotes, Inc. All rights reserved.
             </div>
 

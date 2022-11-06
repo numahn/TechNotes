@@ -14,6 +14,14 @@
   margin-bottom: 10px;
   font-family: 'Times New Roman', Times, serif;
 }
+.col-md-3{
+    width: 35%;
+}
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .logo {
   width: 400px;
@@ -94,4 +102,12 @@
 
 .form-control {
   background-color: #F5F5F5;
+}
+
+.dob-item{
+    width: auto;
+    max-width: 100px;
+}
+.month-select{
+    max-width: 150px;
 }
