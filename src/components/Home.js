@@ -11,7 +11,7 @@ export default function Home() {
             <div className="home-container">
 
                 <div className="logo-container">
-                    <img className='logo' src= {logo} alt="..." />
+                    <img className='logo' src={logo} alt="..." />
                 </div>
                 <div className="name">
                     <p>TechNotes</p>
@@ -27,17 +27,17 @@ export default function Home() {
                         <div className="container-fluid">
                             <form className="row g-3    ">
                                 <div>
-                                    <label for="inputEmail2" className="visually-hidden">Email</label>
-                                    <input type="text" readonly className="form-control" id="inputEmail2" placeholder="email@example.com" />
+                                    <label for="inputEmail2" className="form-label">Email</label>
+                                    <input type="text" readonly className="form-control" id="inputEmail2" placeholder="email@example.com" required />
                                 </div>
                                 <div>
-                                    <label for="inputPassword2" className="visually-hidden">Password</label>
-                                    <input type="password" className="form-control" id="inputPassword2" placeholder="Password" />
+                                    <label for="inputPassword2" className="form-label">Password</label>
+                                    <input type="password" className="form-control" id="inputPassword2" placeholder="Password" required />
                                 </div>
-                                <div>
-                                    <a href="Login">Log In</a>
-                                    <p>Don't have an account? <a href="/Signup">Sign Up</a></p>
+                                <div className='log-btn'>
+                                    <a class="btn btn-success" href="/List" role="button" type='submit'>Log In</a>
                                 </div>
+                                <p>Don't have an account? <a href="/Signup">Sign Up</a></p>
                             </form>
                         </div>
                     </div>

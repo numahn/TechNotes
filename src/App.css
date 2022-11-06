@@ -70,10 +70,20 @@
 
 .Date-of-Birth {
   display: flex;
-  justify-content: space-evenly;
   width: 100%;
 }
 
+.back-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;  
+}
+
+/* .log-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;  
+} */
 
 .container {
   display: flex;
@@ -88,7 +98,6 @@
 .name-form {
   display: flex;
   justify-content: flex-start;
-  flex-direction: column;
 }
 
 .Note-Title {
@@ -110,4 +119,17 @@
 }
 .month-select{
     max-width: 150px;
+}
+
+.List-Layout{
+  color: #636b6a;
+  font-size: 20px;
+  margin: 20px 20px; 
+}
+
+.Create-Note{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin: 20px 20px; 
 }

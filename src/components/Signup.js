@@ -4,7 +4,10 @@ export default function Signup() {
     return (
         <>
 
-            <h1 className= "Header" >Sign Up</h1>
+            <h1 className="Header" >Sign Up</h1>
+            <div className="back-btn">
+                <a class="btn btn-dark" href="/" role="button">Go Back</a>
+            </div>
             <div className="Sign-Up-Container">
                 <form className="row g-3">
                     <div className="Sign-Up-Form">
@@ -40,7 +43,7 @@ export default function Signup() {
                                 <input type="text" className="form-control dob-item" placeholder='Year' required />
                             </div>
                         </div>
-                        <div className="col-md-4">
+                        <div className="p-2 flex-fill">
                             <label for="validationDefaultUsername" className="form-label">Username</label>
                             <div className="input-group">
                                 <input type="text" className="form-control" placeholder='JohnDoe@gmail.com' id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required />
@@ -48,13 +51,13 @@ export default function Signup() {
                         </div>
                         <div className="col-md-3">
                             <label for="validationDefault03" className="form-label">Password</label>
-                            <input type="text" className="form-control" id="validationDefault03" required />
+                            <input type="password" className="form-control" id="validationDefault03" required />
                         </div>
                         <div className="col-md-3">
                             <label for="validationDefault03" className="form-label">Confirm Password</label>
-                            <input type="text" className="form-control" id="validationDefault03" required />
+                            <input type="password" className="form-control" id="validationDefault03" required />
                         </div>
-                        
+
                         <div className="col-12">
                             <div className="form-check">
                                 <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" required />
@@ -68,6 +71,9 @@ export default function Signup() {
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class="bg-dark text-muted text-center py-3 mt-3">
+                © 2022 TechNotes, Inc. All rights reserved.
             </div>
         </>
     )
