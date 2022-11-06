@@ -26,11 +26,11 @@ export default function Signup() {
                         </div>
                         <div class="col-md-3">
                             <label for="validationDefault03" class="form-label">Password</label>
-                            <input type="text" class="form-control" id="validationDefault03" required />
+                            <input type="password" readonly class="form-control" id="validationDefault03" required />
                         </div>
                         <div class="col-md-3">
-                            <label for="validationDefault03" class="form-label">Confirm Password</label>
-                            <input type="text" class="form-control" id="validationDefault03" required />
+                            <label for="validationDefault04" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="validationDefault04" required />
                         </div>
                         <div class="col-md-3">
                             <label for="validationDefault05" class="form-label">D.O.B</label>
