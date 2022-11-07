@@ -1,11 +1,27 @@
-import React from 'react'
-import { useLocation } from 'react-router';
+import React, { useState } from 'react'
+import { useLocation, useNavigate } from 'react-router';
 import logo from "./Notes.jpg";
 
 
 export default function Notes(props) {
     const {state} = useLocation()
-    console.log(state)
+    const navigate = useNavigate()
+    const [title, setTitle] = useState("")
+    const [content, setContent] = useState("")
+
+    const requestOptions = {
+        method: 'PUT',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({noteID: state.notesID, title: title, content: content})
+    }
+
+
+    const handleClick = async (e) => {
+        const response = await fetch("http://localhost:3001/note", requestOptions)
+        const data = await response.json()
+        console.log(data)
+        e.preventDefault()
+    }
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -35,15 +51,15 @@ export default function Notes(props) {
             <div className="mb-3">
                 <label for="NoteTitle" className="form-label"></label>
                 <div className='Note-Title'>
-                    <input type="text" className="form-control" id="NoteTitle" placeholder="Note Title" value={state.title}/>
+                    <input type="text" className="form-control" id="NoteTitle" placeholder="Note Title" defaultValue={state.title} onChange={(e) => {setTitle(e.target.value)}}/>
                 </div>
             </div>
             <div className="mb-3">
                 <label for="exampleFormControlTextarea1" className="form-label"></label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here' value={state.content}></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here' defaultValue={state.content} onChange={(e) => {setContent(e.target.value)}}></textarea>
             </div>
             <div className='Save-Button'>
-                <input className="btn btn-success" type="submit" value="Save" />
+                <input className="btn btn-success" type="submit" value="Save" onClick={(e) => {handleClick(e)}}/>
             </div>
             <div className="bg-dark text-muted text-center py-3 mt-3">
                 © 2022 TechNotes, Inc. All rights reserved.
