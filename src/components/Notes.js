@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect} from 'react'
 import { useLocation, useNavigate } from 'react-router';
 import logo from "./Notes.jpg";
 
@@ -8,6 +8,12 @@ export default function Notes(props) {
     const navigate = useNavigate()
     const [title, setTitle] = useState("")
     const [content, setContent] = useState("")
+
+
+    useEffect(() => {
+        setTitle(state.title)
+        setContent(state.content)
+     }, [])
 
     const requestOptions = {
         method: 'PUT',
@@ -21,6 +27,7 @@ export default function Notes(props) {
         const data = await response.json()
         console.log(data)
         e.preventDefault()
+        navigate("/list")
     }
     return (
         <>
