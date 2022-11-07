@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import logo from "./PostIts.jpg";
 import { useNavigate } from "react-router-dom";
 
-export default function Home() {
+export default function Home(props) {
     const [user, setUser] = useState("")
     const [password, setPassword] = useState("")
     const [loginSuccess, setLoginSuccess] = useState(false)
@@ -35,6 +35,7 @@ export default function Home() {
         const data = await response.json()
         if(data.success){
             setLoginSuccess(true)
+            props.setToken(data.token)
             navigate("/list")
         }
     }

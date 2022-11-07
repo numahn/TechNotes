@@ -1,8 +1,11 @@
 import React from 'react'
+import { useLocation } from 'react-router';
 import logo from "./Notes.jpg";
 
 
-export default function Notes() {
+export default function Notes(props) {
+    const {state} = useLocation()
+    console.log(state)
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,12 +35,12 @@ export default function Notes() {
             <div className="mb-3">
                 <label for="NoteTitle" className="form-label"></label>
                 <div className='Note-Title'>
-                    <input type="text" className="form-control" id="NoteTitle" placeholder="Note Title" />
+                    <input type="text" className="form-control" id="NoteTitle" placeholder="Note Title" value={state.title}/>
                 </div>
             </div>
             <div className="mb-3">
                 <label for="exampleFormControlTextarea1" className="form-label"></label>
-                <textarea className="form-control" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here'></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="6" placeholder='Write Notes Here' value={state.content}></textarea>
             </div>
             <div className='Save-Button'>
                 <input className="btn btn-success" type="submit" value="Save" />
