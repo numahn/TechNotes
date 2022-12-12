@@ -14,7 +14,6 @@ export default function Notes(props) {
         setTitle(state.title)
         setContent(state.content)
      }, [])
-
     const requestOptions = {
         method: 'PUT',
         headers: {'Content-Type': 'application/json'},
