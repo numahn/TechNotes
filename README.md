@@ -7,4 +7,4 @@ Frontend Repository - Used React
 
 (Project for CSC 430)
 Backend Repository:
-[https://github.com/numahn/TechNotesBackendJS]
+https://github.com/numahn/TechNotesBackendJS
