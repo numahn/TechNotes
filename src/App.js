@@ -14,11 +14,11 @@ export default function App() {
 
   return (
    <Routes>
-      <Route path="/" element={<Home token={token} setToken={setToken}/>}/>
+      {/* <Route path="/" element={<Home token={token} setToken={setToken}/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/notes" element={<Notes token={token} setToken={setToken}/>}/>
       <Route path="/list" element={<List token={token} setToken={setToken}/>}/>
-      <Route path="/images" element={<ImageList token={token} setToken={setToken}/>}/>
+      <Route path="/images" element={<ImageList token={token} setToken={setToken}/>}/> */}
    </Routes>
   );
 }
