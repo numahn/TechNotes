@@ -1,3 +1,4 @@
+# OLD REPO - NEW ONE HERE: https://github.com/numahn/TechNotesFrontend
 # TechNotes
 
 
